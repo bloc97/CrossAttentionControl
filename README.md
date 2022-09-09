@@ -73,12 +73,12 @@ Parameters of `stabledifusion(...)`:
 | `prompt_edit_token_weights=[]` | values to scale the importance of the tokens in cross attention layers, as a list of tuples representing `(token id, strength)`, this is used to increase or decrease the importance of a word in the prompt | `[(2, 2.5), (6, -5.0)]` |
 | `prompt_edit_tokens_start=0.0` | how strict is the generation with respect to the initial prompt, increasing this will let the network be more creative for smaller details/textures, should be smaller than `prompt_edit_tokens_start` | `0.0` |
 | `prompt_edit_tokens_start=1.0` | how strict is the generation with respect to the initial prompt, decreasing this will let the network be more creative for larger features/general scene composition, should be bigger than `prompt_edit_tokens_start` | `1.0` |
-| `prompt_edit_spatial_start=0.0` | how strict is the generation with respect to the initial image, increasing this will let the network be more creative for smaller details/textures, should be smaller than `prompt_edit_tokens_start` | `0.0` |
-| `prompt_edit_spatial_end=1.0` | how strict is the generation with respect to the initial image, decreasing this will let the network be more creative for larger features/general scene composition, should be bigger than `prompt_edit_tokens_start` | `1.0` |
+| `prompt_edit_spatial_start=0.0` | how strict is the generation with respect to the initial image, increasing this will let the network be more creative for smaller details/textures, should be smaller than `prompt_edit_spatial_end` | `0.0` |
+| `prompt_edit_spatial_end=1.0` | how strict is the generation with respect to the initial image, decreasing this will let the network be more creative for larger features/general scene composition, should be bigger than `prompt_edit_spatial_start` | `1.0` |
 | `guidance_scale=7.5` | standard classifier-free guidance strength for stable diffusion | `7.5` |
 | `steps=50` | number of diffusion steps as an integer, higher usually produces better images but is slower | `50` |
 | `seed=None` | random seed as an integer, set `None` to use a random seed | `126794873` |
 | `width=512` | image width | `512` |
 | `height=512` | image height | `512` |
-| `init_image=None` | init image for image to image generation, as a PIL image, it will be resized to `width x height` | PIL.Image() |
+| `init_image=None` | init image for image to image generation, as a PIL image, it will be resized to `width x height` | `PIL.Image()` |
 | `init_image_strength=0.5` | strength of the noise added for image to image generation, higher will make the generation care less about the initial image | `0.5` |
