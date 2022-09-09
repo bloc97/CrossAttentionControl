@@ -63,7 +63,7 @@ There are less rocks and fog, but the image's composition and style is completel
 
 
 ## Usage
-Two functions are included, `stablediffusion(...)` which generates images and `prompt_token(...)` that is used to help the user find which token is a word in the prompt.
+Two functions are included, `stablediffusion(...)` which generates images and `prompt_token(...)` that is used to help the user find the token index for words in the prompt.
 
 Parameters of `stabledifusion(...)`:
 | Name = Default Value | Description | Example |
