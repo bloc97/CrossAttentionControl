@@ -31,7 +31,7 @@ Right image prompt: `a fantasy landscape with a pine forest and a river`
 Middle image: Cross attention enabled prompt editing (left image -> right image)  
 ![Demo](https://github.com/bloc97/CrossAttentionControl/blob/main/images/a%20fantasy%20landscape%20with%20a%20pine%20forest%20-%20A%20fantasy%20landscape%20with%20a%20pine%20forest%20and%20a%20river.png?raw=true)
 
-## Direct token control
+## Direct token attention control
 Left image prompt: `a fantasy landscape with a pine forest`  
 Towards the right: `-fantasy`
 ![Demo](https://github.com/bloc97/CrossAttentionControl/blob/main/images/a%20fantasy%20landscape%20with%20a%20pine%20forest%20-%20decrease%20fantasy.png?raw=true)
