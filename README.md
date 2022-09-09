@@ -11,6 +11,7 @@ This notebook uses the following libraries: `torch transformers diffusers numpy 
 Simply install the required libraries using `pip` and run the jupyter notebook, some examples are given inside.
 
 # Results/Demonstrations
+**All images shown below are generated using the same seed. The initial and target images must be generated with the same seed for cross attention control to work.**
 
 ## Reducing unpredictability when modifying prompts
 
@@ -29,7 +30,7 @@ Right image prompt: `a fantasy landscape with a pine forest and a river`
 Middle image: Cross attention enabled prompt editing (left image -> right image)  
 ![Demo](https://github.com/bloc97/CrossAttentionControl/blob/main/images/a%20fantasy%20landscape%20with%20a%20pine%20forest%20-%20A%20fantasy%20landscape%20with%20a%20pine%20forest%20and%20a%20river.png?raw=true)
 
-## Direct prompt control
+## Direct token control
 Left image prompt: `a fantasy landscape with a pine forest`  
 Towards the right: `-fantasy`
 ![Demo](https://github.com/bloc97/CrossAttentionControl/blob/main/images/a%20fantasy%20landscape%20with%20a%20pine%20forest%20-%20decrease%20fantasy.png?raw=true)
@@ -45,3 +46,17 @@ Towards the right: `-fog`
 Left image: from previous example  
 Towards the right: `-rocks` 
 ![Demo](https://github.com/bloc97/CrossAttentionControl/blob/main/images/a%20fantasy%20landscape%20with%20a%20pine%20forest%20-%20decrease%20rocks.png?raw=true)
+
+## Comparison to standard prompt editing
+Let's compare our results above with what people usually do, by editing the prompt alone.  
+We can first try adding "without fog and without rocks" to our prompt.  
+
+Image prompt: `A fantasy landscape with a pine forest without fog and without rocks`  
+However, we still see fog and rocks.  
+![Demo](https://github.com/bloc97/CrossAttentionControl/blob/main/images/A%20fantasy%20landscape%20with%20a%20pine%20forest%20without%20fog%20and%20without%20rocks.png?raw=true)
+
+We can try adding words like dry, sunny and grass.  
+Image prompt: `A fantasy landscape with a pine forest without fog and rocks, dry sunny day, grass`  
+There are less rocks and fog, but the image's composition and style is completely different from before and we still haven't obtained our desired fog and rock-free image...  
+![Demo](https://github.com/bloc97/CrossAttentionControl/blob/main/images/A%20fantasy%20landscape%20with%20a%20pine%20forest%20without%20fog%20and%20rocks%2C%20dry%20sunny%20day%2C%20grass.png?raw=true)
+
