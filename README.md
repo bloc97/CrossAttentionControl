@@ -63,10 +63,6 @@ Left image: from previous example
 Towards the right: `-rocks` 
 ![Demo](https://github.com/bloc97/CrossAttentionControl/blob/main/images/a%20fantasy%20landscape%20with%20a%20pine%20forest%20-%20decrease%20rocks.png?raw=true)
 
-
-
-## Style injection
-
 ## Comparison to standard prompt editing
 Let's compare our results above where we removed fog and rocks from our fantasy landscape using cross attention maps against what people usually do, by editing the prompt alone.  
 We can first try adding "without fog and without rocks" to our prompt.  
