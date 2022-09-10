@@ -14,6 +14,21 @@ A description of the parameters are given at the end of the readme.
 # Results/Demonstrations
 **All images shown below are generated using the same seed. The initial and target images must be generated with the same seed for cross attention control to work.**
 
+## Target replacement
+Top left prompt: `[a cat] sitting on a car`  
+Clockwise: `a smiling dog...`, `a hamster...`, `a tiger...`  
+![Demo](https://github.com/bloc97/CrossAttentionControl/blob/main/images/fouranimals.png?raw=true)
+
+## Style injection
+Top left prompt: `a fantasy landscape with a maple forest`  
+Clockwise: `a watercolor painting of...`, `a van gogh painting of...`, `a charcoal pencil sketch of...`  
+![Demo](https://github.com/bloc97/CrossAttentionControl/blob/main/images/fourstyles.png?raw=true)
+
+## Global edition
+Top left prompt: `a fantasy landscape with a pine forest`  
+Clockwise: `..., spring, green`, `..., winter`, `..., autumn`  
+![Demo](https://github.com/bloc97/CrossAttentionControl/blob/main/images/fourseasons.png?raw=true)
+
 ## Reducing unpredictability when modifying prompts
 
 Left image prompt: `a fantasy landscape with a pine forest`  
@@ -48,8 +63,12 @@ Left image: from previous example
 Towards the right: `-rocks` 
 ![Demo](https://github.com/bloc97/CrossAttentionControl/blob/main/images/a%20fantasy%20landscape%20with%20a%20pine%20forest%20-%20decrease%20rocks.png?raw=true)
 
+
+
+## Style injection
+
 ## Comparison to standard prompt editing
-Let's compare our results above with what people usually do, by editing the prompt alone.  
+Let's compare our results above where we removed fog and rocks from our fantasy landscape using cross attention maps against what people usually do, by editing the prompt alone.  
 We can first try adding "without fog and without rocks" to our prompt.  
 
 Image prompt: `A fantasy landscape with a pine forest without fog and without rocks`  
