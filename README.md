@@ -17,6 +17,7 @@ A description of the parameters are given at the end of the readme.
 ## Target replacement
 Top left prompt: `[a cat] sitting on a car`  
 Clockwise: `a smiling dog...`, `a hamster...`, `a tiger...`  
+Note: different strength values for `prompt_edit_spatial_start` were used, clockwise: `0.7`, `1.0`, `0.5`
 ![Demo](https://github.com/bloc97/CrossAttentionControl/blob/main/images/fouranimals.png?raw=true)
 
 ## Style injection
