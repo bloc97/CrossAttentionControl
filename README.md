@@ -4,7 +4,7 @@ Unofficial implementation of "Prompt-to-Prompt Image Editing with Cross Attentio
 Paper: https://arxiv.org/abs/2208.01626
 
 ## What is Cross Attention Control?
-Large-scale language-image models (eg. Stable Diffusion) are usually hard to control just with changing prompts and can be very unpredictable and unintuitive for users. Cross Attention Control allows much finer control of the prompt by modifying the internal attention maps of the diffusion model during inference with minimal performance penalities (compared to clip guidance) and requires no additional training or fine-tuning.
+Large-scale language-image models (eg. Stable Diffusion) are usually hard to control just with editing the prompts alone and can be very unpredictable and unintuitive for users. Most existing methods require the user to input a mask which is cumbersome and might not yield good results if the mask has an inadequate shape. Cross Attention Control allows much finer control of the prompt by modifying the internal attention maps of the diffusion model during inference without the need for the user to input a mask and does so with minimal performance penalities (compared to clip guidance) and no additional training or fine-tuning of the diffusion model.
 
 ## Getting started
 This notebook uses the following libraries: `torch transformers diffusers numpy PIL tqdm difflib`  
