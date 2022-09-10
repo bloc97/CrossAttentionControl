@@ -24,7 +24,7 @@ Top left prompt: `a fantasy landscape with a maple forest`
 Clockwise: `a watercolor painting of...`, `a van gogh painting of...`, `a charcoal pencil sketch of...`  
 ![Demo](https://github.com/bloc97/CrossAttentionControl/blob/main/images/fourstyles.png?raw=true)
 
-## Global edition
+## Global editing
 Top left prompt: `a fantasy landscape with a pine forest`  
 Clockwise: `..., autumn`, `..., winter`, `..., spring, green`  
 ![Demo](https://github.com/bloc97/CrossAttentionControl/blob/main/images/fourseasons.png?raw=true)
