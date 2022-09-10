@@ -26,7 +26,7 @@ Clockwise: `a watercolor painting of...`, `a van gogh painting of...`, `a charco
 
 ## Global edition
 Top left prompt: `a fantasy landscape with a pine forest`  
-Clockwise: `..., spring, green`, `..., winter`, `..., autumn`  
+Clockwise: `..., autumn`, `..., winter`, `..., spring, green`  
 ![Demo](https://github.com/bloc97/CrossAttentionControl/blob/main/images/fourseasons.png?raw=true)
 
 ## Reducing unpredictability when modifying prompts
