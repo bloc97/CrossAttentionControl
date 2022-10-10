@@ -12,6 +12,8 @@ The last known working version of `diffusers` for the notebook is `diffusers==0.
 Simply install the required libraries using `pip` and run the jupyter notebook, some examples are given inside.  
 A description of the parameters are given at the end of the readme.  
 
+Alternatively there is this easy-to-follow colab demo: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1PsWKXtqAAoDz-KGB45VeCXdTsqW-Mumo)
+
 # Results/Demonstrations
 **All images shown below are generated using the same seed. The initial and target images must be generated with the same seed for cross attention control to work.**
 
