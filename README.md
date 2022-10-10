@@ -8,7 +8,7 @@ Large-scale language-image models (eg. Stable Diffusion) are usually hard to con
 
 ## Getting started
 This notebook uses the following libraries: `torch transformers diffusers numpy PIL tqdm difflib`  
-The last known working version of `diffusers` for the notebook is `diffusers==0.3.0`, an update for `0.4.0` is on the way.
+The last known working version of `diffusers` for the notebook is `diffusers==0.4.1`. A different version of diffusers might cause errors as this notebook injects code into the model and any code change from the `diffusers` library is likely to break compatibility.
 Simply install the required libraries using `pip` and run the jupyter notebook, some examples are given inside.  
 A description of the parameters are given at the end of the readme.  
 
