@@ -111,3 +111,14 @@ Parameters of `stabledifusion(...)`:
 | `height=512` | image height | `512` |
 | `init_image=None` | init image for image to image generation, as a PIL image, it will be resized to `width x height` | `PIL.Image()` |
 | `init_image_strength=0.5` | strength of the noise added for image to image generation, higher will make the generation care less about the initial image | `0.5` |
+
+Parameters of `inversestabledifusion(...)`:
+| Name = Default Value | Description | Example |
+|---|---|---|
+| `init_image` | the image to invert | `PIL.Image("portrait.png")` |
+| `prompt=""` | the prompt as a string used for inversion | `"portrait of a person"` |
+| `guidance_scale=3.0` | standard classifier-free guidance strength for stable diffusion | `3.0` |
+| `steps=50` | number of diffusion steps used for inversion, as an integer | `50` |
+| `refine_iterations=3` | inversion refinement iterations for high CFG values, set to 0 to disable refinement when using lower CFG values, for higher CFG values, consider increasing it. Higher values slow down the algorithm significantly. | `3` |
+| `refine_strength=0.9` | initial strength value for the refinement steps, the internal strength is adaptive | `0.9` |
+| `refine_skip=0.7` | how many diffusion steps of refinement are skipped (value between `0.0` and `1.0`), there is usually no need to refine earlier diffusion steps as CFG is not very important in lower time steps, higher values will skip even more steps | `0.7` |
