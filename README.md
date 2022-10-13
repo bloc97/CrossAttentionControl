@@ -18,7 +18,7 @@ Alternatively there is this easy-to-follow colab demo by [Lewington-pitsos](http
 **All images shown below are generated using the same seed. The initial and target images must be generated with the same seed for cross attention control to work.**
 
 ## New: Image inversion
-This method takes an existing image and finds its corresponding gaussian latent vector, then edits using prompt to prompt editing with cross attention control.
+This method takes an existing image and finds its corresponding gaussian latent vector using a modified inverse DDIM process that keeps compatibility with other ODE schedulers such as K-LMS, then edits using prompt to prompt editing with cross attention control.
 
 Middle: Original image  
 Top left: Reconstructed image using the prompt `a photo of a woman with blonde hair`  
