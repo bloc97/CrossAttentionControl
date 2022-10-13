@@ -17,6 +17,16 @@ Alternatively there is this easy-to-follow colab demo by [Lewington-pitsos](http
 # Results/Demonstrations
 **All images shown below are generated using the same seed. The initial and target images must be generated with the same seed for cross attention control to work.**
 
+## New: Image inversion
+This method takes an existing image and finds its corresponding gaussian latent vector using a modified inverse DDIM process that keeps compatibility with other ODE schedulers such as K-LMS, then edits using prompt to prompt editing with cross attention control. A finite difference gradient descent method that corrects for high CFG values is also provided. It allows inversion with higher CFG values (eg. 3.0-5.0), while without it only CFG values below 3.0 are usable.
+
+Middle: Original image  
+Top left: Reconstructed image using the prompt `a photo of a woman with blonde hair`  
+Clockwise: See [InverseCrossAttention_Release.ipynb](https://github.com/bloc97/CrossAttentionControl/blob/main/InverseCrossAttention_Release.ipynb) for the prompts in order.  
+Note that some fine tuning on the prompts have been done to make these images consistent. For example, when changing the hair color, sometimes the person starts smiling, which can be removed by adding a `smile` token in the prompt and adjust its weight downwards using cross attention control.
+![Demo](https://github.com/bloc97/CrossAttentionControl/blob/main/images/faces_test.png?raw=true)
+
+
 ## Target replacement
 Top left prompt: `[a cat] sitting on a car`  
 Clockwise: `a smiling dog...`, `a hamster...`, `a tiger...`  
