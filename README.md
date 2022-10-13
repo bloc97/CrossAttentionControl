@@ -22,7 +22,7 @@ This method takes an existing image and finds its corresponding gaussian latent 
 
 Middle: Original image  
 Top left: Reconstructed image using the prompt `a photo of a woman with blonde hair`  
-Clockwise: See `InverseCrossAttention_Release.ipynb` for the prompts in order.  
+Clockwise: See [InverseCrossAttention_Release.ipynb](https://github.com/bloc97/CrossAttentionControl/blob/main/InverseCrossAttention_Release.ipynb) for the prompts in order.  
 Note that some fine tuning on the prompts have been done to make these images consistent. For example, when changing the hair color, sometimes the person starts smiling, which can be removed by adding a `smile` token in the prompt and adjust its weight downwards using cross attention control.
 ![Demo](https://github.com/bloc97/CrossAttentionControl/blob/main/images/faces_test.png?raw=true)
 
