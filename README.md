@@ -1,7 +1,7 @@
 # Cross Attention Control with Stable Diffusion
 Unofficial implementation of "Prompt-to-Prompt Image Editing with Cross Attention Control" with Stable Diffusion, some modifications were made to the methods described in the paper in order to make them work with Stable Diffusion.  
 
-Paper: https://arxiv.org/abs/2208.01626
+Paper: https://arxiv.org/abs/2208.01626  
 Official implementation: https://github.com/google/prompt-to-prompt
 
 ## What is Cross Attention Control?
